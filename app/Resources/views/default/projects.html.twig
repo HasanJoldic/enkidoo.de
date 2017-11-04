@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container">
+        <div class="project" href="/projects/ishap/">
+            <h1>ISHAP Befund-App</h1>
+            <img src="{{ asset('static/images/projects/ishap/befund_definition_cms_html_edit_pdf_preview.png') }}">
+            <p>
+                Single page application für digitales Bearbeiten von Dokumenten.
+                Die Applikation kann von mehreren Firmen mit mehreren Angestellten benutzt werden die verschiede
+                Zugansberechtigungen haben können. Die Firmen können die Struktur der Dokumente in den CMS ändern,
+                wie auch neue User kreieren, ändern, usw.<br>
+                Geschrieben in node/hapi/postgres, react/redux, und typescript/javascript.
+            </p>
+            <a class="btn bg-info" href="/projekte/ishap/">Lese mehr</a>
+        </div>
+        <div class="project" href="/projects/ishap/">
+            <h1>Miro Gradnja</h1>
+            <img src="{{ asset('static/images/projects/miro-gradnja/cms_select.png') }}">
+            <p>
+                Firmenwebsite für ein kleines Bauunternehmen.<br>
+                Das besondere an der Website ist ein sehr intuitives CMS und eine 'timetravel' Funktion.<br>
+                Geschrieben in PHP/mysql mit Symfony.
+            </p>
+            <a class="btn bg-info" href="/projekte/miro-gradnja/">Lese mehr</a>
+        </div>
+    </div>
+
+{% endblock %}

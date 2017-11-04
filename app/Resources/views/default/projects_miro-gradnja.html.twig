@@ -1,0 +1,65 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container">
+        <div class="project" href="/projects/miro-gradnja/">
+            <h1>Miro Gradnja</h1>
+            <p>
+                Firmenwebsite für ein kleines Bauunternehmen.<br>
+                Das besondere an der Website ist ein sehr intuitives CMS und eine 'timetravel' Funktion.
+            </p>
+            <br>
+            <br>
+            <div class="project-image">
+                <img src="{{ asset('static/images/projects/miro-gradnja/startseite.png') }}">
+                <p>
+                    Startseite
+                </p>
+            </div>
+            <div class="project-image">
+                <img src="{{ asset('static/images/projects/miro-gradnja/cms_select.png') }}">
+                <p>
+                    CMS - Jedes Element dessen Inhalt man ändern kann wird bei 'mouseover' hervorgehoben.<br>
+                    Hier kann man das linke Element ändern.
+                </p>
+            </div>
+            <div class="project-image">
+                <img src="{{ asset('static/images/projects/miro-gradnja/cms_einstellungen.png') }}">
+                <p>
+                    CMS - Für das was auserhalb der Website steht, wie z.B. 'favicon' oder Website 'title', gibt es ein Einstellungen button.
+                </p>
+            </div>
+            <div class="project-image">
+                <img src="{{ asset('static/images/projects/miro-gradnja/cms_timetravel.png') }}">
+                <p>
+                    CMS - Timetravel<br>
+                    Meiner Meinung nach die beste funktion dieses CMS.<br>
+                    Jederzeit kann man die Website auf ein früheres Datum zurückstellen.<br>
+                </p>
+            </div>
+            <div class="project-image">
+                <img src="{{ asset('static/images/projects/miro-gradnja/contact_broken.png') }}">
+                    <p>
+                        CMS - Timeravel Beispiel<br>
+                        Die Kontakt Seite hat man kaputt gemacht.
+                        Man hat den Tekst an einigen Stellen geändert und der richtige Tekst ist nicht mehr da.
+                    </p>
+            </div>
+            <div class="project-image">
+                <img src="{{ asset('static/images/projects/miro-gradnja/cms_timetravel_in_use.png') }}">
+                <p>
+                    CMS - Timeravel Beispiel<br>
+                    Man wählt ein Datum aus um die Website zurückzustellen.
+                </p>
+            </div>
+            <div class="project-image">
+                <img src="{{ asset('static/images/projects/miro-gradnja/contact_fixed.png') }}">
+                <p>
+                    CMS - Timeravel Beispiel<br>
+                    Die Kontakt Seite hat wieder die vorherigen Daten.
+                </p>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
