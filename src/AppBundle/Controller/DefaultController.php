@@ -16,6 +16,7 @@ class DefaultController extends Controller
     {
         return $this->render("default/index.html.twig", [
             "base_dir" => realpath($this->getParameter("kernel.project_dir")).DIRECTORY_SEPARATOR,
+            "activePage" => "homepage"
         ]);
     }
 
@@ -26,6 +27,7 @@ class DefaultController extends Controller
     {
         return $this->render("default/projects.html.twig", [
             "base_dir" => realpath($this->getParameter("kernel.project_dir")).DIRECTORY_SEPARATOR,
+            "activePage" => "projects"
         ]);
     }
 
@@ -36,6 +38,7 @@ class DefaultController extends Controller
     {
         return $this->render("default/projects_ishap.html.twig", [
             "base_dir" => realpath($this->getParameter("kernel.project_dir")).DIRECTORY_SEPARATOR,
+            "activePage" => "projects"
         ]);
     }
 
@@ -46,6 +49,7 @@ class DefaultController extends Controller
     {
         return $this->render("default/projects_miro-gradnja.html.twig", [
             "base_dir" => realpath($this->getParameter("kernel.project_dir")).DIRECTORY_SEPARATOR,
+            "activePage" => "projects"
         ]);
     }
 
@@ -61,7 +65,8 @@ class DefaultController extends Controller
         return $this->render("default/contact.html.twig", [
             "base_dir" => realpath($this->getParameter("kernel.project_dir")).DIRECTORY_SEPARATOR,
             "error" => $error,
-            "success" => $success
+            "success" => $success,
+            "activePage" => "contact"
         ]);
     }
 
