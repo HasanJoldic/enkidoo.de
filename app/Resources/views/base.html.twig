@@ -13,10 +13,10 @@
 
     </head>
     <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-faded py-lg-4">
-        <div class="container">
-            <a class="navbar-brand" href="/">
-                <img src="{{ asset('static/images/logo.png') }}" height="100px">&nbsp;&nbsp;Enki D.O.O.
+    <nav class="navbar navbar-expand-lg navbar-light bg-faded navigation">
+        <div class="container navigation">
+            <a class="navbar-brand" style="color: white" href="/">
+                <img src="{{ asset('static/images/logo.png') }}" height="50px">&nbsp;&nbsp;Enki D.O.O.
             </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,20 +29,20 @@
                     {% if activePage is defined and activePage == "homepage" %}
                         active
                     {%  endif %}">
-                        <a class="nav-link text-uppercase text-expanded" href="/">Startseite
+                        <a class="nav-link text-uppercase" href="/">Startseite
                         </a>
                     </li>
                     <li class="nav-item px-lg-4
                     {% if activePage is defined and activePage == "projects" %}
                         active
                     {%  endif %}">
-                        <a class="nav-link text-uppercase text-expanded" href="/projekte/">Projekte</a>
+                        <a class="nav-link text-uppercase" href="/projekte/">Projekte</a>
                     </li>
                     <li class="nav-item px-lg-4
                     {% if activePage is defined and activePage == "contact" %}
                         active
                     {%  endif %}">
-                        <a class="nav-link text-uppercase text-expanded" href="/kontakt/">Kontakt</a>
+                        <a class="nav-link text-uppercase" href="/kontakt/">Kontakt</a>
                     </li>
                 </ul>
             </div>
@@ -64,10 +64,10 @@
         {% block body %}{% endblock %}
         </div>
         {% block javascripts %}
-            <footer class="bg-faded text-center fixed-bottom" style="background-color: rgba(255, 255, 255, 1);">
-                <div class="container">
-                    <p class="m-0">2017&copy; Alle Rechte vorbehalten</p>
-                    <a class="text-muted" href="/impressum/"><small>Impressum</small></a>
+            <footer class="bg-faded fixed-bottom navigation">
+                <div class="container navigation">
+                    <small class="m-0">2017&copy; Alle Rechte vorbehalten&nbsp;&nbsp;&nbsp;&nbsp;</small>
+                    <a href="/impressum/"><small>Impressum</small></a>
                 </div>
             </footer>
             <script src="{{ asset("static/js/jquery.min.js") }}"></script>
