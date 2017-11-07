@@ -1,5 +1,5 @@
-.container {
-    margin-bottom: 100px;
+.main-content {
+    margin-bottom: 50px;
 }
 @media (min-width: 992px) {
     .container-index {
