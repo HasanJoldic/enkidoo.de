@@ -13,15 +13,11 @@
 
     </head>
     <body>
-    <div class="tagline-upper text-center text-heading text-shadow mt-5 d-none d-lg-block">
-        <img src="{{ asset('static/images/logo.png') }}" height="100px">&nbsp;&nbsp;Enki D.O.O.
-    </div>
-    <div class="tagline-lower text-center text-expanded text-shadow mb-5 d-none d-lg-block">
-        Lusnica 34 | Srebrenik, 75350, Bosnien-Herzegowina | +387/ (0) 62 396 551 | office@enkidoo.de
-    </div>
-
     <nav class="navbar navbar-expand-lg navbar-light bg-faded py-lg-4">
         <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="{{ asset('static/images/logo.png') }}" height="100px">&nbsp;&nbsp;Enki D.O.O.
+            </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -51,7 +47,10 @@
                 </ul>
             </div>
         </div>
+
     </nav>
+
+
     {% if error is defined and error != null %}
         <div class="alert alert-danger" role="alert">
             {{ error | raw }}
@@ -65,7 +64,7 @@
         {% block body %}{% endblock %}
         </div>
         {% block javascripts %}
-            <footer class="bg-faded text-center py-5">
+            <footer class="bg-faded text-center fixed-bottom" style="background-color: rgba(255, 255, 255, 1);">
                 <div class="container">
                     <p class="m-0">2017&copy; Alle Rechte vorbehalten</p>
                     <a class="text-muted" href="/impressum/"><small>Impressum</small></a>

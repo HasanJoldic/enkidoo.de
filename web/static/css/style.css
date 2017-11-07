@@ -1,6 +1,6 @@
 .main-content {
-    margin-bottom: 50px;
-
+    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .container {
@@ -105,6 +105,14 @@ body {
 
 
 
+html {
+    background: url('/static/images/background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
 h1 {
     font-size: 4rem;
 }
@@ -151,4 +159,15 @@ hr.divider {
 
 .active {
     border-bottom: solid #17a2b8 4px;
+}
+
+
+body {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-color: rgba(255, 255, 255, 0.9);
+    min-height: 105vh;
+
 }
