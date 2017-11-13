@@ -57,8 +57,9 @@
         border-radius: 5px;
     }
 
-    .profile-page {
-        margin-top: 10%;
+    /* make navbar stretch whole width */
+    .navbar-collapse {
+        flex-basis: auto;
     }
 }
 
@@ -231,8 +232,3 @@ body {
     color: white;
 }
 
-
-/* make navbar stretch whole width */
-.navbar-collapse {
-    flex-basis: auto;
-}
