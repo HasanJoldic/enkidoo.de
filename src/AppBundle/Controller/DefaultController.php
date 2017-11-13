@@ -44,7 +44,7 @@ class DefaultController extends Controller
 
     /**
      * @Route("/projekte/miro-gradnja/", name="projects_miro-gradnja")
-     */
+
     public function projectsMiroGradnjaAction(Request $request)
     {
         return $this->render("default/projects_miro-gradnja.html.twig", [
@@ -52,6 +52,7 @@ class DefaultController extends Controller
             "activePage" => "projects"
         ]);
     }
+    */
 
     /**
      * @Route("/kontakt/", name="contact")
