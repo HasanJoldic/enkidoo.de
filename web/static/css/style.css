@@ -61,6 +61,10 @@
     .navbar-collapse {
         flex-basis: auto;
     }
+
+    h1 {
+      font-size: 4rem;
+    }
 }
 
 h1 {
@@ -163,7 +167,7 @@ body {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 2rem;
 }
 
 .tagline-upper {
