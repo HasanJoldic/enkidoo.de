@@ -1,4 +1,4 @@
 enkidoo.de
 ==========
 
-A Symfony project created on November 3, 2017, 1:29 pm.
+after change run `php bin/console cache:clear --no-warmup --env=prod`
